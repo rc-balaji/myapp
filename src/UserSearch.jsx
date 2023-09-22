@@ -13,7 +13,7 @@ function UserSearch() {
   };
 
   const handleSubmit = () => {
-    axios.get(`${process.env.REACT_APP_SERVER_URL}/api/users/${userId}`)
+    axios.get(`https://myapp-server-p9au.onrender.com/api/users/${userId}`)
       .then((response) => {
         setUser(response.data);
         setError(null);
